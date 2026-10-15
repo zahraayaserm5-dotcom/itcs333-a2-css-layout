@@ -5,3 +5,188 @@
 /* TODO: style .card (padding, border, gap) and .card-grid (display, gap, 3 columns) */
 /* TODO: style form inputs (padding) and a :focus state */
 /* TODO: add a @media (max-width: 700px) query collapsing .card-grid to one column */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #25344a;
+}
+
+
+/* General Page Styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #25344a;
+}
+
+/* Header Styling */
+
+#site-header {
+    background-color: #183153;
+    color: white;
+    padding: 20px;
+    border-bottom: 3px solid #4da8ff;
+    text-align: center;
+}
+
+/* Navigation Styling */
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-nav a:hover {
+    color: #4da8ff;
+}
+
+/* Main Content */
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.content-section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+.content-section h2 {
+    color: #183153;
+}
+
+/* Schedule Table */
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.schedule-table th,
+.schedule-table td {
+    border: 1px solid #cccccc;
+    padding: 12px;
+    text-align: left;
+}
+
+.schedule-table th {
+    background-color: #24558a;
+    color: white;
+}
+
+.schedule-table tbody tr:nth-child(even) {
+    background-color: #eef4fb;
+}
+
+/* Card Grid Styling */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #f8fbff;
+    padding: 20px;
+    border: 2px solid #c8d9eb;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card h3 {
+    color: #183153;
+}
+
+.weight {
+    color: #2878c7;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Registration Form */
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+}
+
+.register-form label {
+    font-weight: bold;
+}
+
+.register-form input {
+    padding: 12px;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.register-form input:focus {
+    outline: 2px solid #4da8ff;
+    border-color: #2878c7;
+}
+
+/* Register Button */
+
+.btn-primary {
+    background-color: #2878c7;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #195b9c;
+}
+
+/* Footer Styling */
+
+.site-footer {
+    background-color: #183153;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 700px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
